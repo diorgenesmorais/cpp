@@ -20,6 +20,7 @@ struct DADOS_ALUNO aluno4;
 struct DADOS_ALUNO aluno5;
 struct DADOS_ALUNO aluno6;
 struct DADOS_ALUNO aluno7;
+struct DADOS_ALUNO aluno8;
 struct DADOS_ALUNO alunoEncontrado;
 
 bool pesquisaBinaria(DADOS_ALUNO alunos[], int tam, int codigo, DADOS_ALUNO &aluno){
@@ -61,7 +62,10 @@ int main(){
 	aluno7.codAluno = 7;
 	strcpy(aluno7.nome, "Fatima");
 
-	DADOS_ALUNO alunos[] = {aluno1, aluno2, aluno3, aluno4, aluno5, aluno6, aluno7};
+	aluno8.codAluno = 8;
+	strcpy(aluno8.nome, "Henrique");
+
+	DADOS_ALUNO alunos[] = {aluno1, aluno2, aluno3, aluno4, aluno5, aluno6, aluno7, aluno8};
 
 	int codigo = 0;
 
@@ -69,7 +73,7 @@ int main(){
 
 	scanf("%i", &codigo);
 	
-	printf("%s %s\n", pesquisaBinaria(alunos, 7, codigo, alunoEncontrado) ? "Aluno encontrado:" : "not found", alunoEncontrado.nome);
+	printf("%s %s\n", pesquisaBinaria(alunos, 8, codigo, alunoEncontrado) ? "Aluno encontrado:" : "not found", alunoEncontrado.nome);
 
 	return 0;
 }

@@ -67,7 +67,7 @@ int main(){
 
 	printf("Digite um código: ");
 
-	scanf("%d", &codigo);
+	scanf("%i", &codigo);
 	
 	printf("%s %s\n", pesquisaBinaria(alunos, 7, codigo, alunoEncontrado) ? "Aluno encontrado:" : "not found", alunoEncontrado.nome);
 

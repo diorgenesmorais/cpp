@@ -17,6 +17,14 @@ void resultado(bool result){
 	printf("%s\n", result ? "Inserção efetuada com sucesso!" : "lista cheia");
 }
 
+void exibirLista(float lista[], int tamanho){
+	int i = 0;
+	while(i < tamanho){
+		printf("%.1f ", lista[i++]);
+	}
+	printf("\n");
+}
+
 int main(){
 	float listaNotas[MAX_LISTA]; // lista linear sequencial
 	int posUltimoElemLista = 0;
@@ -30,6 +38,8 @@ int main(){
 		cout << "Deseja continuar? S/n ";
 		cin >> continuar;
 	}
+
+	exibirLista(listaNotas, posUltimoElemLista);
 
 	return 0;
 }

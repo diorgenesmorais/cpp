@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 
-unsigned int fatorial(unsigned short n);
+unsigned int fatorial(unsigned short);
 
 bool isNatural(int n){
      return (n > -1);
@@ -28,9 +28,5 @@ int main(){
 }
 
 unsigned int fatorial(unsigned short n){
-     if(n == 0){
-          return 1;
-     } else {
-          return (n * fatorial(n - 1));
-     }
+	return (n == 0) ? 1 : n * fatorial(n - 1);
 }

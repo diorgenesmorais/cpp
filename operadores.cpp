@@ -12,5 +12,11 @@ int main(){
 
 	resultado = false | a++ != b;
 	cout << "A prova que executou o 2º teste (a = 2)= " << a << endl;
+	int x = 3;
+	long r = 1L;
+	while(x-- > 0){
+		r *= a;
+	}
+	cout << "A potência de 2³ é: " << r << endl;
 	return 0;
 }

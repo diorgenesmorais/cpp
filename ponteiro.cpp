@@ -61,8 +61,9 @@ int main(){
 	cout << "\nO novo endereço de \"pt\": " << pt << " o valor do 1º endereço: " << *(pt) << endl;
 	
 	// liberar os endereços
-	delete pt, px, outro;
+	delete pt; delete px; delete outro;
 	pt = 0; px = 0; outro = 0;
+	cout << "\nFim de ponteiro" << endl;
 
 	return 0;
 }
